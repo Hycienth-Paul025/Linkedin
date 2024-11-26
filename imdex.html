@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>social media tutorials</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/linkedin.png" type="image/x-icon">
+</head>
+
+<body>
+    <!--  ........NAVBAR STARTS........ -->
+
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="imdex.html" class="logo"><img src="img/linkedin.png" alt=""></i></a>
+
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="search">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i><span>My Network</span></a></li>
+                <li><a href="#"><i class="fa-solid fa-bag-shopping"></i><span>jobs</span></a></li>
+                <li><a href="#"><i class="fa-solid fa-envelope"></i><span>Messaging</span></a></li>
+                <li><a href="#"><i class="fa-solid fa-bell"></i><span>Notification</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="img/image-2.png" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+
+        </div>
+
+        <!-- PROFILE-DROP-DOWN-MENU -->
+
+        <div class="profile-menu-wrap" id="profileMenu" >
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="img/image-2.png">
+                    <div>
+                        <h3>Jake Smith</h3>
+                        <a href="proifle.html">see your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <i class="fa-solid fa-message" style="color: white;"></i>
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <i class="fa-solid fa-gear" style="color: white;"></i>
+                    <p>Setings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <i class="fa-solid fa-question" style="color: white;"></i>
+                    <p> Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <i class="fa-solid fa-moon" style="color: white;"></i>
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <i class="fa-solid fa-arrow-right-from-bracket" style="color: white;"></i>
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ........NAVBAR ENDS........ -->
+
+    <div class="container">
+        <!-- ........LEFT SIDEBAR STRATS........ -->
+        <div class="left-sidebar">
+            <div class="sidebar-profile-box">
+                <img src="img/image-3.jpg">
+                <div class="sidebar-profile-info">
+                    <img src="img/image-2.png">
+                    <h1>Jake Smith</h1>
+                    <h3>Web Develooper at Microsoft</h3>
+                    <ul>
+                        <li>Your profile views <span>52</span></li>
+                        <li>Your post views <span>800</span></li>
+                        <li>Your Pconnection <span>250</span></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-profile-link">
+                    <a href="#"><i class="fa-solid fa-bookmark" style="color: #0045bd;"></i>My items</a>
+                    <a href="#"><i class="fa-solid fa-star" style="color: #ffd900;"></i>Try Premium</a>
+                </div>
+            </div>
+
+            <div class="sidebar-activity" id="sidebarActivity">
+                <h3>RECENT</h3>
+                <a href="#"><i class="fa-solid fa-arrow-rotate-left"></i>Web Development</a>
+                <a href="#"><i class="fa-solid fa-arrow-rotate-left"></i>User interface</a>
+                <a href="#"><i class="fa-solid fa-arrow-rotate-left"></i>Online Learning</a>
+                <a href="#"><i class="fa-solid fa-arrow-rotate-left"></i>Learn Online</a>
+                <a href="#"><i class="fa-solid fa-arrow-rotate-left"></i>Group Learning</a>
+                <h3>GROUPS</h3>
+                <a href="#"><i class="fa-solid fa-user-group"></i>Web Design Group</a>
+                <a href="#"><i class="fa-solid fa-user-group"></i>HTML & CSS Learners</a>
+                <a href="#"><i class="fa-solid fa-user-group"></i>Python & Javascript Group</a>
+                <a href="#"><i class="fa-solid fa-user-group"></i>Learning code Online</a>
+                <h3>HASHTAG</h3>
+                <a href="#"><i class="fa-solid fa-hashtag"></i>webdevelopment</a>
+                <a href="#"><i class="fa-solid fa-hashtag"></i>userinterface</a>
+                <a href="#"><i class="fa-solid fa-hashtag"></i>onlinelearning</a>
+                <div class="discover-more-link">
+                    <a href="#">Discover more</a>
+                </div>
+            </div>
+
+
+            <p id="showMoreLink" onclick="toggleActivity()" >show more <b>+</b></p>
+
+        </div>
+        <!-- ........LEFT-SIDEBAR ENDS........ -->
+
+        <!-- ........MAIN-CONTENT STARTS........ -->
+        <div class="main-content">
+            <div class="creat-post">
+                <div class="creat-post-input">
+                    <img src="img/image-2.png">
+                    <textarea rows="2" placeholder="Write a post"></textarea>
+                </div>
+                <div class="create-post-link">
+
+                    <li><i class="fa-solid fa-camera"></i>Photos</li>
+                    <li><i class="fa-solid fa-video"></i>Video</li>
+                    <li><i class="fa-solid fa-calendar-days"></i>Events</li>
+                    <li>Post</li>
+
+                </div>
+            </div>
+
+            <div class="sort-by">
+                <hr>
+                <p>sort by <span>top <i class="fa-solid fa-caret-down"></i></span></p>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="img/dev-1.png" alt="">
+                    <div>
+                        <h1>Ben Leo</h1>
+                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+
+                <p>The success of every websites depends on search engine optimisation and digital marketting strategy.
+                    If you are on first page of all major search engines then you are ahead among your competitors</p>
+
+                <img src="img/meeting-1.jpg" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-hand"></i>
+                        <span class="liked-user">Ben Leo and 100 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+
+                <div class="post-activity">
+                    <div>
+                        <img src="img/image-2.png">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <span>Like</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-comment" style=" color:red;"></i>
+                        <span>Comment</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-share"></i>
+                        <span>Share</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-redo"></i>
+                        <span>Send</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="img/hijab.png" alt="">
+                    <div>
+                        <h1>Carl Jane</h1>
+                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+
+                <p>The success of every websites depends on search engine optimisation and digital marketting strategy.
+                    If you are on first page of all major search engines then you are ahead among your competitors</p>
+
+                <img src="img/meeting-2.jpg" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-hand"></i>
+                        <span class="liked-user">Ben Leo and 100 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+
+                <div class="post-activity">
+                    <div>
+                        <img src="img/hijab.png">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <span>Like</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-comment" style=" color:red;"></i>
+                        <span>Comment</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-share"></i>
+                        <span>Share</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-redo"></i>
+                        <span>Send</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="img/hijab.png" alt="">
+                    <div>
+                        <h1>Sahi H</h1>
+                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+
+                <p>The success of every websites depends on search engine optimisation and digital marketting strategy.
+                    If you are on first page of all major search engines then you are ahead among your competitors</p>
+
+                <img src="img/web-dev-5.jpg" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-hand"></i>
+                        <span class="liked-user">Ben Leo and 100 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+
+                <div class="post-activity">
+                    <div>
+                        <img src="img/hijab.png">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <span>Like</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-comment" style=" color:red;"></i>
+                        <span>Comment</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-share"></i>
+                        <span>Share</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-redo"></i>
+                        <span>Send</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="img/hijab.png" alt="">
+                    <div>
+                        <h1>Sahi H</h1>
+                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+
+                <p>The success of every websites depends on search engine optimisation and digital marketting strategy.
+                    If you are on first page of all major search engines then you are ahead among your competitors</p>
+
+                <img src="img/web-dev-4.jpg" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-hand"></i>
+                        <span class="liked-user">Ben Leo and 100 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+
+                <div class="post-activity">
+                    <div>
+                        <img src="img/hijab.png">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <span>Like</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-comment" style=" color:red;"></i>
+                        <span>Comment</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-share"></i>
+                        <span>Share</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-redo"></i>
+                        <span>Send</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- ........MAIN-CONTENT ENDS........ -->
+
+        <!-- ........RIGHT-SIDEBAR ENDS........ -->
+        <div class="right-sidebar">
+            <div class="sidebar-news">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <h3>Trending News</h3>
+                <a href="#">High demend for skilled manpower</a>
+                <span>1d ago &middot; 10,980 readers</span>
+
+                <a href="#">career growing horizontally too</a>
+                <span>22h ago &middot; 1,552 readers</span>
+
+                <a href="#">let's work visa for US, more for UK</a>
+                <span>10d ago &middot; 27,290 readers</span>
+
+                <a href="#">More hiring = higher confidence?</a>
+                <span>18h ago &middot; 8,208 readers</span>
+
+                <a href="#">Gautam Adani is the world's third richest</a>
+                <span>10h ago &middot;2,245 readers</span>
+
+                <a href="#" class="read-more-link">Read More</a>
+            </div>
+            <div class="sidebar-ad">
+                <small>Ad &middot; &middot; &middot; </small>
+                <p>Master the 5 principles of web design</p>
+                <div>
+                    <img src="img/image-2.png" alt="">
+                    <img src="img/mi.png" alt="">
+                </div>
+                <b>Brand and Demand in Xiaomi</b>
+                <a href="#" class="ad-link">Learn More</a>
+            </div>
+
+            <div class="sidebar-useful-link">
+                <a href="#">About</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Help Center</a>
+                <a href="#">Provacy Policy</a>
+                <a href="#">Advertising </a>
+                <a href="#">Get the App </a>
+                <a href="#">More </a>
+
+                <div class="copyright-msg">
+                    <img src="img/linkedin.png" alt="">
+                    <p>linkedup &#169; 2024. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+        <!-- ........RIGHT-SIDEBAR ENDS........ -->
+    </div>
+
+    <script src="js/script.js" ></script> 
+</body>
+
+</html>
