@@ -201,12 +201,16 @@ a {
 .left-sidebar {
     position: sticky;
     top: 73px;
-    flex-basis: 22%;
+    flex-basis: 15%;
     align-self: flex-start;
 }
 
 .sidebar-profile-box {
     background: white;
+}
+
+.sidebar-profile-box img{
+    width: 470px;
 }
 
 .sidebar-profile-info {
@@ -433,7 +437,7 @@ a {
 
 /*  ........MAIN-CONTENT STARTS........  */
 .main-content {
-    flex-basis: 41.8%;
+    flex-basis: 41%;
 }
 
 .creat-post {
